@@ -73,3 +73,22 @@ Berikut adalah struktur proyek aplikasi ini:
     ```
 -   **Koneksi Database**: Pastikan MySQL berjalan dan database `atkita` sudah dibuat.
 -   **File .env**: Jika menggunakan file `.env` untuk konfigurasi database, pastikan file tersebut ada di folder `server/` dan sudah diatur dengan benar.
+
+## Cara Setup XAMPP dan Import Database
+
+### Langkah 1: Menjalankan MySQL di XAMPP
+1.  Buka aplikasi **XAMPP Control Panel**.
+2.  Cari modul **Apache** dan **MySQL**.
+3.  Klik tombol **Start** pada kedua modul tersebut. Statusnya akan berubah menjadi hijau jika berhasil.
+
+### Langkah 2: Membuat Database Baru
+1.  Buka browser web dan kunjungi alamat `http://localhost/phpmyadmin`.
+2.  Di sisi kiri, klik tombol **New** untuk membuat database baru.
+3.  Masukkan nama database **`atkita`** pada kolom yang tersedia, lalu klik tombol **Create**.
+
+### Langkah 3: Mengimpor File SQL
+1.  Setelah database `atkita` berhasil dibuat, klik nama database tersebut di sisi kiri.
+2.  Pilih tab **Import** di bagian atas.
+3.  Klik tombol **Choose File** dan cari file `atkita.sql` yang ada di dalam folder `server/` proyek Anda.
+4.  Gulir ke bawah dan klik tombol **Go** untuk memulai proses impor.
+5.  Jika impor berhasil, akan muncul pesan konfirmasi dan tabel-tabel database akan terlihat di sisi kiri.
