@@ -1,0 +1,200 @@
+/* Reset dan Normalisasi */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Container utama */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Heading */
+h1, h2 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Form */
+form {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form input[type="text"], form input[type="number"], form input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #305832;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+form button:hover {
+  background-color: #3b6d3e;
+}
+
+/* Tabel Daftar Barang dan Log History */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  background-color: #fff;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+ul li:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+/* Daftar Barang */
+.barang-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.barang-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+}
+
+.barang-list li span {
+  font-weight: bold;
+}
+
+/* Tombol Hapus yang sudah diperbaiki */
+.barang-list .delete-button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.barang-list .delete-button:hover {
+  background-color: #c0392b;
+}
+
+.barang-list .delete-container {
+  display: flex;
+  justify-content: flex-end;  /* Tombol hapus berada di kanan */
+}
+
+.barang-list li span,
+.barang-list .delete-container {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+/* Log History */
+.log-history {
+  margin-top: 30px;
+}
+
+.log-history ul {
+  padding-left: 20px;
+}
+
+.log-history li {
+  font-size: 14px;
+  margin: 5px 0;
+  color: #555;
+}
+
+.log-history li span {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 10px;
+  }
+  
+  form input[type="text"], form input[type="number"], form input[type="date"], form button {
+    width: 100%;
+  }
+  
+
+
+/* Style untuk input dan dropdown */
+.search-container {
+  position: relative;
+  width: 100%;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.search-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-top: none;
+  max-height: 150px;
+  overflow-y: auto;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.search-dropdown-item {
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.search-dropdown-item:hover {
+  background-color: #f0f0f0;
+}
+
+/* Lainnya... */
+
+} 

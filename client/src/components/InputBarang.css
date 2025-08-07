@@ -1,0 +1,81 @@
+/* Container untuk form Pengeluaran Barang */
+.input-container {
+  width: 100%;
+  max-width: 1200px; /* Memperbesar ukuran form menjadi 2x lebih besar */
+  min-width: 800px; /* Menambahkan lebar minimal agar form tetap besar */
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 60px 50px; /* Menambah padding agar lebih besar dan lega */
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Judul form */
+.input-container h2 {
+  text-align: center;
+  margin-bottom: 40px; /* Menambah margin bawah untuk tampilan lebih seimbang */
+  font-weight: 700;
+  color: #333;
+  font-size: 36px; /* Menggunakan ukuran font lebih besar untuk judul */
+}
+
+/* Input fields */
+.input-container input,
+.input-container select {
+  width: 100%;
+  padding: 25px 30px; /* Menambah padding agar input lebih lega dan besar */
+  margin-bottom: 25px; /* Memberikan jarak antar input yang lebih besar */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 20px; /* Ukuran font lebih besar untuk kenyamanan */
+  transition: all 0.3s ease;
+}
+
+.input-container input:focus,
+.input-container select:focus {
+  border-color: #4CAF50;
+  box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.2);
+  outline: none;
+}
+
+/* Tombol submit */
+.input-container button {
+  width: 100%;
+  padding: 25px;
+  background-color: #4CAF50;
+  color: white;
+  font-weight: bold;
+  font-size: 24px; /* Ukuran font lebih besar pada tombol */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.input-container button:hover {
+  background-color: #45a049;
+}
+
+/* Responsiveness untuk layar kecil */
+@media screen and (max-width: 768px) {
+  .input-container {
+    width: 90%; /* Menyesuaikan ukuran form di layar kecil */
+    margin: 20px auto;
+    padding: 30px 20px; /* Padding lebih kecil untuk layar kecil */
+  }
+
+  .input-container h2 {
+    font-size: 28px; /* Mengurangi ukuran font judul untuk tampilan kecil */
+  }
+
+  .input-container input,
+  .input-container select {
+    font-size: 18px; /* Menyesuaikan ukuran font input */
+    padding: 18px 20px; /* Menambah padding untuk kenyamanan */
+  }
+
+  .input-container button {
+    font-size: 18px; /* Ukuran font tombol disesuaikan */
+    padding: 18px;
+  }
+}
