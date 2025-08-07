@@ -1,0 +1,61 @@
+/* PengeluaranBarang.css */
+.form-card {
+  max-width: 500px;
+  margin: auto;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-card form input,
+.form-card form button {
+  width: 100%;
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.form-card form button {
+  background-color: #2f5d3f;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.form-card h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Styling untuk input datetime-local */
+input[type="datetime-local"] {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #fff;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+/* Menambahkan fokus pada input */
+input[type="datetime-local"]:focus {
+  outline: none;
+  border-color: #43915e; /* Ganti warna border saat fokus */
+  box-shadow: 0 0 5px rgba(67, 145, 94, 0.5); /* Efek bayangan saat fokus */
+}
+
+/* Styling untuk teks dan elemen di dalam input */
+input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+  background-color: #43915e;
+  border-radius: 50%;
+  padding: 3px;
+}
+
+/* Styling untuk placeholder */
+input[type="datetime-local"]::placeholder {
+  color: #bbb;
+}
